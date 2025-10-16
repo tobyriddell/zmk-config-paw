@@ -1,0 +1,11 @@
+file_format: "1"
+id: paw
+name: PAW
+type: shield
+url: https://github.com/tobyriddell/PAW
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+siblings:
+  - paw_left
+  - paw_right

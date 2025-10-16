@@ -1,6 +1,6 @@
 include:
   - board: seeeduino_xiao_ble
-    shield: totem_left
+    shield: paw_left
   - board: seeeduino_xiao_ble
-    shield: totem_right
+    shield: paw_right
 # there is no settingsreset (needed) for the XIAO
