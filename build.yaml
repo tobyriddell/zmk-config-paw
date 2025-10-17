@@ -1,6 +1,6 @@
 include:
-  - board: seeeduino_xiao_ble
+  - board: nice_nano_v2
     shield: paw_left
-  - board: seeeduino_xiao_ble
+  - board: nice_nano_v2
     shield: paw_right
 # there is no settingsreset (needed) for the XIAO
