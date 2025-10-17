@@ -3,7 +3,7 @@ id: paw
 name: PAW
 type: shield
 url: https://github.com/tobyriddell/PAW
-requires: [seeeduino_xiao_ble]
+requires: [pro_micro]
 features:
   - keys
 siblings:
