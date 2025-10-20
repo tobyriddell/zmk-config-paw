@@ -24,6 +24,29 @@
         >;
     };
 
+
+        gpio-map
+//            = <0 0 &gpio0 8 0>      /* D0 */
+//            , <1 0 &gpio0 6 0>      /* D1 */
+//            , <2 0 &gpio0 17 0>     /* D2 */
+//            , <3 0 &gpio0 20 0>     /* D3 */
+//            , <4 0 &gpio0 22 0>     /* D4/A6 */
+//            , <5 0 &gpio0 24 0>     /* D5 */
+//            , <6 0 &gpio1 0 0>      /* D6/A7 */
+//            , <7 0 &gpio0 11 0>     /* D7 */
+//            , <8 0 &gpio1 4 0>      /* D8/A8 */
+//            , <9 0 &gpio1 6 0>      /* D9/A9 */
+//            , <10 0 &gpio0 9 0>     /* D10/A10 */
+//            , <16 0 &gpio0 10 0>    /* D16 */
+//            , <14 0 &gpio1 11 0>    /* D14 */
+//            , <15 0 &gpio1 13 0>    /* D15 */
+//            , <18 0 &gpio1 15 0>    /* D18/A0 */
+//            , <19 0 &gpio0 2 0> /* D19/A1 */
+//            , <20 0 &gpio0 29 0>    /* D20/A2 */
+//            , <21 0 &gpio0 31 0>    /* D21/A3 */
+//            ;
+
+
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-direct";
         wakeup-source;
@@ -32,7 +55,7 @@
             , <&pro_micro 18 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&pro_micro 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&pro_micro 20 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&pro_micro 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&pro_micro 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
 
             , <&pro_micro 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&pro_micro 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
@@ -43,7 +66,7 @@
             , <&pro_micro 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&pro_micro 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&pro_micro 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&pro_micro 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&pro_micro 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&pro_micro 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&pro_micro 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&pro_micro 19 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
