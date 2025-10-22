@@ -1,10 +1,10 @@
 # Copyright (c) 2022 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_PAW_LEFT
+if SHIELD_PAW_RIGHT
 
 config ZMK_KEYBOARD_NAME
-    default "PAW"
+    default "Paw"
     
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
