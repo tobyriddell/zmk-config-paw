@@ -1,6 +1,6 @@
 file_format: "1"
 id: paw
-name: PAW
+name: Paw
 type: shield
 url: https://github.com/tobyriddell/PAW
 requires: [pro_micro]
