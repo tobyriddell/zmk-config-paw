@@ -69,7 +69,7 @@ label= "BASE"                              ;
     &mt LGUI A  &mt LALT S  &mt LCTRL D &kp F         &kp G                                                                     &kp H      &kp J        &mt RCTRL K &mt RALT L  &mt RGUI O
     &kp Z       &kp X       &kp C       &kp V         &kp B                                                                     &kp K      &kp M        &kp COMMA   &kp DOT     &kp FSLH
 
-                                                         &kp TAB     &lt NAV SPACE  &kp TAB        &kp BSPC    &lt SYM RET  &kp BSPC
+                                                         &kp SPC     &lt NAV DEL &kp TAB          &kp ESC      &kp BSPC    &lt SYM RET
                        >;
                 };
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
