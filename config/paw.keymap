@@ -30,6 +30,11 @@
                 key-positions = <11 12 13>;
                 bindings = <&tog TVP1>;
             };
+            combo_ctrl {
+                timeout-ms = <50>;
+                key-positions = <1 2>;
+                bindings = <&kp LCTRL>;
+            };
     };
 
     macros {
