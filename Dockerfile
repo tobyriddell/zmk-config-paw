@@ -21,16 +21,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN west build -d /build/left  -p -b nice_nano_v2 -s /zmk-config-paw/zmk/app -- -DSHIELD=paw_left  -DZMK_CONFIG=/zmk-config-paw/config
-RUN west build -d /build/right -p -b nice_nano_v2 -s /zmk-config-paw/zmk/app -- -DSHIELD=paw_right -DZMK_CONFIG=/zmk-config-paw/config
-
-# SVG post-processing helper
-COPY thicken_svg.py /tmp/thicken_svg.py
-
-# Generate keymap diagrams
-# Parse keymap file to YAML, then draw SVG diagram
-RUN keymap parse -z config/boards/shields/paw/paw.keymap -o paw.yaml && \
-    keymap draw -d config/paw_physical_layout.dtsi paw.yaml -o /build/paw.svg && \
-    python3 /tmp/thicken_svg.py /build/paw.svg /build/paw_thick.svg
+# Run build script
+RUN ./build.sh
 
 CMD ["/bin/sh", "-c", "cp /build/paw.svg /out/paw.svg && cp /build/paw_thick.svg /out/paw_thick.svg && cp /build/left/zephyr/zmk.uf2 /out/left.uf2 && cp /build/right/zephyr/zmk.uf2 /out/right.uf2"]
