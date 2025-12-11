@@ -5,12 +5,12 @@
 #include <physical_layouts.dtsi>
 
 
-#define BASE 0
-#define NAV  1
-#define SYM  2
-#define ADJ  3
-#define TVP1 4
-#define TVP2 5
+#define BASE   0
+#define NAVNUM 1
+#define SYM    2
+#define ADJ    3
+#define TVP1   4
+#define TVP2   5
 
 &mt {
   quick-tap-ms = <100>;
@@ -18,53 +18,6 @@
   flavor = "tap-preferred";
   tapping-term-ms = <170>;
 };
-
-//&physical_layout0 {
-//        compatible = "zmk,physical-layout";
-//        display-name = "Paw";
-//
-//        kscan = <&kscan0>;
-//        transform = <&default_transform>;
-//
-//        keys  //                     w   h    x    y     rot    rx    ry
-//            = <&key_physical_attrs 100 100    0   62       0     0     0>
-//            , <&key_physical_attrs 100 100  100   25       0     0     0>
-//            , <&key_physical_attrs 100 100  200    0       0     0     0>
-//            , <&key_physical_attrs 100 100  300   25       0     0     0>
-//            , <&key_physical_attrs 100 100  400   37       0     0     0>
-//            , <&key_physical_attrs 100 100 1200   37       0     0     0>
-//            , <&key_physical_attrs 100 100 1300   25       0     0     0>
-//            , <&key_physical_attrs 100 100 1400    0       0     0     0>
-//            , <&key_physical_attrs 100 100 1500   25       0     0     0>
-//            , <&key_physical_attrs 100 100 1600   62       0     0     0>
-//            , <&key_physical_attrs 100 100    0  162       0     0     0>
-//            , <&key_physical_attrs 100 100  100  125       0     0     0>
-//            , <&key_physical_attrs 100 100  200  100       0     0     0>
-//            , <&key_physical_attrs 100 100  300  125       0     0     0>
-//            , <&key_physical_attrs 100 100  400  137       0     0     0>
-//            , <&key_physical_attrs 100 100 1200  137       0     0     0>
-//            , <&key_physical_attrs 100 100 1300  125       0     0     0>
-//            , <&key_physical_attrs 100 100 1400  100       0     0     0>
-//            , <&key_physical_attrs 100 100 1500  125       0     0     0>
-//            , <&key_physical_attrs 100 100 1600  162       0     0     0>
-//            , <&key_physical_attrs 100 100    0  262       0     0     0>
-//            , <&key_physical_attrs 100 100  100  225       0     0     0>
-//            , <&key_physical_attrs 100 100  200  200       0     0     0>
-//            , <&key_physical_attrs 100 100  300  225       0     0     0>
-//            , <&key_physical_attrs 100 100  400  237       0     0     0>
-//            , <&key_physical_attrs 100 100 1200  237       0     0     0>
-//            , <&key_physical_attrs 100 100 1300  225       0     0     0>
-//            , <&key_physical_attrs 100 100 1400  200       0     0     0>
-//            , <&key_physical_attrs 100 100 1500  225       0     0     0>
-//            , <&key_physical_attrs 100 100 1600  262       0     0     0>
-//            , <&key_physical_attrs 100 100  500  275       0     0     0>
-//            , <&key_physical_attrs 100 100  600  287       0     0     0>
-//            , <&key_physical_attrs 100 100  700  300       0     0     0>
-//            , <&key_physical_attrs 100 100  900  300       0     0     0>
-//            , <&key_physical_attrs 100 100 1000  287       0     0     0>
-//            , <&key_physical_attrs 100 100 1100  275       0     0     0>
-//            ;
-//};
 
 / {
     chosen {
@@ -172,13 +125,13 @@ label= "BASE"                              ;
     &mt LGUI A  &mt LALT S  &mt LCTRL D &mt LSHFT F &kp G                                                                      &kp H       &mt RSHFT J &mt RCTRL K &mt RALT L  &mt RGUI O
     &kp Z       &kp X       &kp C       &kp V       &kp B                                                                      &kp K       &kp M       &kp COMMA   &kp DOT     &kp FSLH
 
-                                                         &kp BSPC    &lt NAV DEL &kp ESC          &kp TAB      &kp SPC     &lt SYM RET
+                                                         &kp BSPC    &lt NAVNUM DEL &kp ESC          &kp TAB      &kp SPC     &lt SYM RET
                        >;
                 };
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-                nav_layer {
+                navnum_layer {
 //  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-label= "NAVI"                              ;
+label= "NAVNUM"                              ;
 //  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //  ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓                                                              ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //  ┃   ESC     ┃           ┃     UP    ┃     =     ┃     {     ┃                                                              ┃     }     ┃     7     ┃     8     ┃     9     ┃     +     ┃
